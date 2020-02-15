@@ -1,0 +1,24 @@
+<div>
+  <input type="button" value="ADD" class="btn-primary" (click)="add()" />
+  <hr/>
+  <table class="table">
+    <thead>
+      <th>Sn</th>
+      <th>NAME</th>
+      <th>CATEGORY</th>
+      <th>COST</th>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
+        <td>{{product.cost}}</td>
+        <td><input type="button" value="Update" class="btn-warning" (click) = "update(product.id)" /></td>
+        <td><input type="button" value="Delete" class="btn-danger" (click) = "delete(product.id)"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

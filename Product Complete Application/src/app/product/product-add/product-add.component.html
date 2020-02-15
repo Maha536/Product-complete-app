@@ -1,0 +1,18 @@
+<div>
+  <h3>Add new Product</h3>
+  <div class="row">
+    <div class="col"><label for="">Enter product name</label></div>
+    <div class="col"><input type="text" #txtName /></div>
+  </div>
+  <div class="row">
+    <div class="col"><label for="">Enter product category</label></div>
+    <div class="col"><input type="text" #txtCategory /></div>
+  </div><div class="row">
+    <div class="col"><label for="">Enter product cost</label></div>
+    <div class="col"><input type="text" #txtCost /></div>
+  </div>
+  <div class="row">
+    
+    <div class="col"><input type="button" value="Save" (click)="saveProduct(txtName, txtCategory, txtCost)" /></div>
+  </div>
+</div>

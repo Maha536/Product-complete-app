@@ -1,0 +1,18 @@
+<div>
+  <h3>Update Product</h3>
+  <div class="row">
+    <div class="col"><label for="">Product name</label></div>
+    <div class="col"><input type="text" value="{{product.name}}" #txtName /></div>
+  </div>
+  <div class="row">
+    <div class="col"><label for="">Product category</label></div>
+    <div class="col"><input type="text" value="{{product.category}}" #txtCategory /></div>
+  </div><div class="row">
+    <div class="col"><label for="">Product cost</label></div>
+    <div class="col"><input type="text" value="{{product.cost}}" #txtCost /></div>
+  </div>
+  <div class="row">
+    
+    <div class="col"><input type="button" value="Update" (click)="updateProduct(txtName, txtCategory, txtCost)" /></div>
+  </div>
+</div>

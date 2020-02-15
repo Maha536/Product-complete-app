@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "First",
+      "category": "Books",
+      "cost": 500
+    },
+    {
+      "name": "Second",
+      "category": "Sweets",
+      "cost": 1000,
+      "id": 2
+    },
+    {
+      "name": "Fifth",
+      "category": "Books",
+      "cost": 100,
+      "id": 5
+    },
+    {
+      "name": "Seventh",
+      "category": "Music",
+      "cost": 300,
+      "id": 7
+    }
+  ]
+}

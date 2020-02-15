@@ -1,0 +1,21 @@
+<ul class="nav nav-pill nav-justified">
+  <li class="nav-item ">
+      <!-- href would be replaced by [routerLink] -->
+      <a class="nav-link btn-warning" [routerLink]="['/home']">HOME</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link btn-primary" [routerLink]="['/contactus']">CONTACT US</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link btn-secondary" [routerLink]="['/aboutus']">ABOUT US</a>
+  </li>
+  <li *ngIf="!auth.isUserLoggedIn()" class="nav-item">
+    <a class="nav-link btn-info" [routerLink]="['/login']">LOGIN</a>
+  </li>
+  <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+    <a class="nav-link btn-success" [routerLink]="['/product']">PRODUCTS</a>
+  </li>
+  <li  *ngIf="auth.isUserLoggedIn()"class="nav-item">
+    <a class="nav-link btn-danger" [routerLink]="['/logout']">LOGOUT</a>
+  </li>
+</ul>
